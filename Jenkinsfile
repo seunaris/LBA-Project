@@ -6,17 +6,17 @@ pipeline {
     }
 
     environment {
-        SNAP-REPO = 'lba-snapshot'
-        NEXUS-USER = 'admin'
-        NEXUS-PASS = 'admin123'
-        RELEASE-REPO = 'lba-release'
-        CENTRAL-REPO = 'lba-maven-central'
+        SNAP_REPO = 'lba-snapshot'
+        NEXUS_USER = 'admin'
+        NEXUS_PASS = 'admin123'
+        RELEASE_REPO = 'lba-release'
+        CENTRAL_REPO = 'lba-maven-central'
         NEXUSIP = '172.31.62.148'
         NEXUSPORT = '8081'
-        NEXUS-GRP-REPO = 'lba-maven-group'
+        NEXUS_GRP_REPO = 'lba-maven-group'
         NEXUS_LOGIN = 'nexuslogin'
     }
-    
+
     stages {
         stage('Build'){
             steps {
